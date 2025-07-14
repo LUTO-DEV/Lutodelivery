@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - LUTO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href= https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>LUTO</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class=”active”>Menu</a></li>
+        <li><a href="how it works.html">How It Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="menu-page">
+    <h3>Our Full Menu</h3>
+    <div class="cart-summary">
+        <p><strong>CART : </strong><span id="cart-total-display">0</span> Birr</p>
+    </div>
+
+    <section class="featured-products">
+      <article>
+        <img src="Pizza.jpg" alt="Pizza" />
+        <h4>Cheese Lover's Pizza</h4>
+        <p>Fresh mozzarella, tomato sauce, and crust perfection.</p>
+        <button class="add-to-cart" data-name ="Cheese Lover's Pizza" data-price="300">Add to cart</button>
+      </article>
+
+      <article>
+        <img src="injera.jpg" alt="Injera" />
+        <h4>Injera Platter</h4>
+        <p>Served with doro wat, lentils, and spinach. Authentic Ethiopian taste delivered fast.</p>
+        <button class="add-to-cart" data-name ="Injera Platter" data-price="200">Add to cart</button>
+      </article>
+
+      <article>
+        <img src="burger.jpg" alt="Burger" />
+        <h4>Classic Burger</h4>
+        <p>Juicy beef, melted cheddar, fresh veggies, and a toasted sesame bun.</p>
+        <button class="add-to-cart" data-name ="Classic Burger" data-price="350">Add to cart</button>
+      </article>
+
+      <article>
+        <img src="shawarma.jpg" alt="Shawarma" />
+        <h4>Beef Shawarma Wrap</h4>
+        <p>Grilled beef, spicy sauce, and pickles wrapped in warm flatbread.</p>
+        <button class="add-to-cart" data-name ="Beef Shawarma Wrap" data-price="450">Add to cart</button>
+      </article>
+
+      <article>
+        <img src="fries.jpg" alt="Fries" />
+        <h4>Loaded Fries</h4>
+        <p>Golden fries topped with cheese, beef bits, and spicy mayo.</p>
+        <button class="add-to-cart" data-name ="Loaded Fries" data-price="170">Add to cart</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LUTO. All rights reserved.</p>
+    <small>Hot food. On time. Always. 🍴</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

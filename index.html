@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUTO — Fast, Elegant Food Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap rel="stylesheet">
+</head>
+<body>
+
+  
+  <header>
+    <nav>
+      <h1>LUTO</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="how it works.html">How It Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section class="hero-video">
+    <video autoplay muted loop playsinline>
+      <source src="hero-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <h2>Elegant Food Delivery — Fast, Hot, Always</h2>
+      <p>From your favorite local spots in under 30 minutes.</p>
+      <a href="menu.html" class="cta-button">Order Now</a>
+    </div>
+  </section>
+
+  
+  <main>
+
+    <section class="featured-products">
+      <h3>Popular Dishes</h3>
+      <article>
+        <img src="Pizza.jpg" alt="Pizza" />
+        <h4>Cheese Lover's Pizza</h4>
+        <p>Fresh, gooey, and delivered hot.</p>
+      </article>
+      <article>
+        <img src="injera.jpg" alt="Injera" />
+        <h4>Traditional Injera Platter</h4>
+        <p>Authentic Ethiopian taste at your door.</p>
+      </article>
+      <article>
+        <img src="burger.jpg" alt="Burger" />
+        <h4>Classic Burger</h4>
+        <p>Juicy, crispy, and satisfying.</p>
+      </article>
+    </section>
+
+    <section class="how-it-works">
+      <h3>How It Works</h3>
+      <ol>
+        <li>Pick your favorite meal</li>
+        <li>Tap “Order”</li>
+        <li>We deliver in under 30 minutes</li>
+      </ol>
+    </section>
+<section class="checkout-form">
+  <h3>Place Your Order</h3>
+  <form action=https://formspree.io/f/mqalzywg method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="09XXXXXXXX" required />
+
+    <label for="item">Select Item</label>
+    <select id="item" name="item" required>
+      <option disabled selected>Select a dish</option>
+      <option>Cheese Lover's Pizza</option>
+      <option>Injera Platter</option>
+      <option>Classic Burger</option>
+    </select>
+    <h2>Your cart</h2>
+    <ul id="cart-preview"></ul>
+    <p><strong>Total: </strong> <span id="cart-form-total">0</span> Birr</p>
+    <input type="hidden" name="cart" id="cart-data">
+
+    <label for="notes">Delivery Notes</label>
+    <textarea id="notes" name="notes" placeholder="Gate code, floor, etc…"></textarea>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 LUTO. All rights reserved.</p>
+    <small>Made with love in Addis Ababa 🇪🇹</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

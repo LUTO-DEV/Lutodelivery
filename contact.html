@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - LUTO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>LUTO</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="how it works.html">How It Works</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-info">
+      <h2>Contact LUTO</h2>
+      <p>Need help or have feedback? Reach us anytime.</p>
+
+      <div class="info-blocks">
+        <div class="info-box">
+          <h4>Email Us</h4>
+          <p><a href=mailto:support@lutoaddis.com>support@lutoaddis.com</a></p>
+        </div>
+
+        <div class="info-box">
+          <h4>Call Us</h4>
+          <p>+251 912 345 678</p>
+        </div>
+
+        <div class="info-box">
+          <h4>Visit Us</h4>
+          <p>Bole, Addis Ababa, Ethiopia</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action=https://formspree.io/f/mqalzywg method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type=”email” name=”email” placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message…" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LUTO. All rights reserved.</p>
+    <small>Responding fast — just like our food 🚀</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
