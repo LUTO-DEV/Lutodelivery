@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     list.innerHTML = "";
 
     if (cart.length === 0) {
-      List.innerHTML = "<li>Your cart is empty.</li>";
+      list.innerHTML = "<li>Your cart is empty.</li>";
       totalEl.textContent = "0";
       hiddenInput.value = "";
       return;
@@ -129,16 +129,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (response.ok) {
           showSuccessMessage();
           form.reset();
-          cart = []
+          cart.length = 0; 
           saveCart();
           updateCartDisplay() // Clear form after success
         } else {
-          Alert("Something went wrong. Please try again.");
+          alert("Something went wrong. Please try again.");
         }
       })
       .catch(error => {
-        Console.error("Error:", error);
-        Alert("Network error. Please try again later.");
+        console.error("Error:", error);
+        alert("Network error. Please try again later.");
       });
     });
   }
