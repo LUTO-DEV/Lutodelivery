@@ -59,23 +59,28 @@
   }
   
   /* ===== Hero Video Section ===== */
-  .video-container {
+ .hero-section {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  height: 100vh; /* or whatever height you prefer */
   overflow: hidden;
-  z-index: 1;
 }
 
-.video-container iframe {
+.video-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
   border: none;
 }
-  
+
 .hero-overlay {
   position: absolute;
   top: 50%;
@@ -86,36 +91,49 @@
   padding: 20px;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 12px;
+  z-index: 2; /* Higher than video container */
+  width: 80%; /* Adjust as needed */
+  max-width: 600px; /* Prevents overlay from being too wide */
 }
 
-      
+.hero-overlay h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.cta-button {
+  background: #00a8ff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #007cc0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-overlay {
+    width: 90%;
+    padding: 15px;
+  }
   
   .hero-overlay h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
   }
-  
-  .hero-overlay p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-  }
-  
-  .cta-button {
-    background: #00a8ff;
-    color: #fff;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px;
-    display: inline-block;
-    transition: 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background: #007cc0;
-  }
+}
   
   /* ===== Featured Products Section ===== */
   .featured-products {
