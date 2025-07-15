@@ -1,60 +1,60 @@
 /* ===== Global Reset ===== */
 •	{
-    Margin: 0;
-    Padding: 0;
-    Box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  Body {
-    Font-family: 'Inter', sans-serif;
-    Background-color: #fdfdfd;
-    Color: #1f1f1f;
-    Line-height: 1.6;
-    Font-size: 16px;
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfdfd;
+    color: #1f1f1f;
+    line-height: 1.6;
+    font-size: 16px;
   }
   
-  A {
-    Color: inherit;
-    Text-decoration: none;
+  a {
+    color: inherit;
+    text-decoration: none;
   }
   
-  Ul {
-    List-style: none;
+  ul {
+    list-style: none;
   }
   
   /* ===== Header Navigation ===== */
-  Header {
-    Padding: 20px 40px;
-    Background-color: #fff;
-    Box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    Position: sticky;
-    Top: 0;
+  header {
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
     z-index: 100;
   }
   
-  Nav {
-    Display: flex;
-    Justify-content: space-between;
-    Align-items: center;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  Nav h1 {
-    Font-size: 28px;
-    Font-weight: 700;
-    Color: #1f2a56;
+  nav h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2a56;
   }
   
-  Nav ul {
-    Display: flex;
-    Gap: 30px;
+  nav ul {
+    display: flex;
+    gap: 30px;
   }
   
-  Nav li a {
-    Font-weight: 500;
-    Transition: 0.3s;
+  nav li a {
+    font-weight: 500;
+    transition: 0.3s;
   }
   
-  Nav li a:hover {
+  nav li a:hover {
     Color: #00a8ff;
   }
   
@@ -77,15 +77,21 @@
 }
   
   .hero-overlay {
-    Position: absolute;
-    Top: 50%;
-    Left: 50%;
-    Transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    width: 100%;
+    height: 100%; 
     Text-align: center;
     Color: #fff;
-    Padding: 20px;
+    Padding: 1rem;
     Background: rgba(0, 0, 0, 0.4);
     Border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    allign-items: center;
+    flex-dirextion: column;
   }
   
   .hero-overlay h2 {
