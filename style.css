@@ -62,9 +62,8 @@
  .hero-section {
   position: relative;
   width: 100%;
-  height: 50%; /* or whatever height you prefer */
+  height: 100vh; /* or whatever height you prefer */
   overflow: hidden;
-  object-fit: cover;
 }
 
 .video-container {
@@ -79,7 +78,8 @@
 .video-container iframe {
   width: 100%;
   height: 100%;
-  border: none;
+  object-fit: cover;
+  
 }
 
 .hero-overlay {
